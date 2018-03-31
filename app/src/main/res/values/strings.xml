@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project4</string>
+    <string name="loginText_text">TextView</string>
+    <string name="loginTextView">Login : </string>
+    <string name="firstnameTextView_text">Firstname : </string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="passwordTextView_text">Password : </string>
+    <string name="main_activity_error_message">Login or password is incorrect!</string>
+    <string name="success_login_message">Login successful!</string>
+    <string name="registration_title_message">Registration</string>
+</resources>

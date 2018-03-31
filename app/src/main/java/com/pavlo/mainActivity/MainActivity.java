@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.illyahavrulyk.project4.R;
 import com.pavlo.registerActivity.RegisterActivity;
 import com.pavlo.userInfoActivity.UserInfoActivity;
+import com.pavlo.util.Const;
 
 import database.Database;
 import database.DatabaseImpl;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 
     private IMainPresenter presenter;
 
-    private Intent intent;
     private Database database;
 
     private String login;
@@ -61,8 +61,13 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
                 }
 
                 User user = presenter.findUserByLogin(login);
+                if (user == null) {
+                    showErrorMessage();
+                    return;
+                }
 
-                intent = new Intent(MainActivity.this, UserInfoActivity.class);
+                Intent intent = new Intent(MainActivity.this, UserInfoActivity.class);
+                intent.putExtra(Const.USER_LOGIN, login);
                 startActivity(intent);
             }
         });
@@ -70,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
         registrationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intent = new Intent(MainActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

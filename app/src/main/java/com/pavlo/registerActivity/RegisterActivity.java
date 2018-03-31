@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.illyahavrulyk.project4.R;
 import com.pavlo.userInfoActivity.UserInfoActivity;
+import com.pavlo.util.Const;
 
 import database.DatabaseImpl;
 import model.User;
@@ -51,10 +52,11 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
                 String password = passwordRegisterEditText.getText().toString();
                 String confirmPassword = passwordConfirmRegisterEditText.getText().toString();
 
-                if(!presenter.areFieldsEmpty(login,firstName,lastName,password,confirmPassword) && presenter.isPasswoordConfirm(password,confirmPassword)){
+                if(!presenter.areFieldsEmpty(login,firstName,lastName,password,confirmPassword) && presenter.isPasswordConfirm(password,confirmPassword)){
                     User user = new User(firstName,lastName,password,login,"Male");
                     presenter.saveUser(user);
                     Intent intent = new Intent(RegisterActivity.this, UserInfoActivity.class);
+                    intent.putExtra(Const.USER_LOGIN, login);
                     startActivity(intent);
                 }else {
                     hideRegisterTitleTextView();

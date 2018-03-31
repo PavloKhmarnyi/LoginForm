@@ -1,4 +1,4 @@
-package com.example.illyahavrulyk.project4.activity.activity.registerActivity;
+package com.pavlo.registerActivity;
 
 import database.Database;
 import model.User;
@@ -14,6 +14,20 @@ public class RegisterPresenter implements IRegisterPresenter {
     public RegisterPresenter(RegisterView view, Database database) {
         this.view = view;
         this.database = database;
+    }
+
+    @Override
+    public boolean areFieldsEmpty(String login, String lastName, String firstName, String password, String confirmPassword) {
+        return login.equals("") &&
+                firstName.equals("") &&
+                lastName.equals("") &&
+                password.equals("") &&
+                confirmPassword.equals("");
+    }
+
+    @Override
+    public boolean isPasswordConfirm(String password, String confirmPassword) {
+        return password.equals(confirmPassword);
     }
 
     @Override

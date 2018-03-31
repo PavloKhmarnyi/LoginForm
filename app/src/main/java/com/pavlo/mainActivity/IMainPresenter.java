@@ -1,4 +1,4 @@
-package com.example.illyahavrulyk.project4.activity.activity.mainActivity;
+package com.pavlo.mainActivity;
 
 import model.User;
 

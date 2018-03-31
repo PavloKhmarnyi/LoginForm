@@ -1,4 +1,4 @@
-package com.example.illyahavrulyk.project4.activity.activity.mainActivity;
+package com.pavlo.mainActivity;
 
 /**
  * Created by pavlo on 3/10/2018.

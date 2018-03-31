@@ -1,8 +1,6 @@
-package com.example.illyahavrulyk.project4.activity.activity.mainActivity;
+package com.pavlo.mainActivity;
 
 import database.Database;
-import database.DatabaseImpl;
-import database.UserDatabase;
 import model.User;
 
 /**

@@ -1,4 +1,4 @@
-package com.example.illyahavrulyk.project4.activity.activity.mainActivity;
+package com.pavlo.mainActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.illyahavrulyk.project4.R;
-import com.example.illyahavrulyk.project4.activity.activity.registerActivity.RegisterActivity;
-import com.example.illyahavrulyk.project4.activity.activity.userInfoActivity.UserInfoActivity;
+import com.pavlo.registerActivity.RegisterActivity;
+import com.pavlo.userInfoActivity.UserInfoActivity;
 
 import database.Database;
 import database.DatabaseImpl;

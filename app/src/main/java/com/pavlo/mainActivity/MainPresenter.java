@@ -28,7 +28,7 @@ public class MainPresenter implements IMainPresenter {
             return null;
         }
 
-        if (isPasswordCorrect(user.getPassword())) {
+        if (!isPasswordCorrect(user.getPassword())) {
             view.showErrorMessage();
         }
         return user;

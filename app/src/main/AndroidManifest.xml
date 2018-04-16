@@ -17,13 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.pavlo.userInfoActivity.UserInfoActivity" />
-
-
         <activity
             android:name="com.pavlo.registerActivity.RegisterActivity"
             android:finishOnTaskLaunch="true"
-            android:windowSoftInputMode="stateHidden"
-            />
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>

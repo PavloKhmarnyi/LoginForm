@@ -52,13 +52,13 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
                 String password = passwordRegisterEditText.getText().toString();
                 String confirmPassword = passwordConfirmRegisterEditText.getText().toString();
 
-                if(!presenter.areFieldsEmpty(login,firstName,lastName,password,confirmPassword) && presenter.isPasswordConfirm(password,confirmPassword)){
+                if (!presenter.areFieldsEmpty(login,firstName,lastName,password,confirmPassword) && presenter.isPasswordConfirm(password,confirmPassword)){
                     User user = new User(firstName,lastName,password,login,"Male");
                     presenter.saveUser(user);
                     Intent intent = new Intent(RegisterActivity.this, UserInfoActivity.class);
                     intent.putExtra(Const.USER_LOGIN, login);
                     startActivity(intent);
-                }else {
+                } else {
                     hideRegisterTitleTextView();
                     showErrorRegisterTextView();
                     return;

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/loginTextView"
+        android:id="@+id/loginLabelTextView"
         android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:text="@string/loginTextView"
@@ -19,7 +19,7 @@
         />
 
     <TextView
-        android:id="@+id/loginShow"
+        android:id="@+id/loginTextView"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:textColor="#00ff08"
@@ -27,11 +27,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextView"
+        app:layout_constraintTop_toBottomOf="@+id/loginLabelTextView"
         />
 
     <TextView
-        android:id="@+id/firstnameTextView"
+        android:id="@+id/firstNameLabelTextView"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="@string/firstnameTextView_text"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginShow"/>
+        app:layout_constraintTop_toBottomOf="@+id/loginTextView"/>
 
     <TextView
-        android:id="@+id/firstnameShow"
+        android:id="@+id/firstNameTextView"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:textColor="#00ff08"
@@ -51,10 +51,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstnameTextView"/>
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabelTextView"/>
 
     <TextView
-        android:id="@+id/passwordTextView"
+        android:id="@+id/lastNameLabelTextView"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="@string/firstnameTextView_text"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTextView"/>
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff08"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameLabelTextView"/>
+
+    <TextView
+        android:id="@+id/passwordLabelTextView"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="@string/passwordTextView_text"
@@ -63,10 +86,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstnameShow"/>
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView"/>
 
     <TextView
-        android:id="@+id/passwordShow"
+        android:id="@+id/passwordTextView"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:textColor="#00ff08"
@@ -74,6 +97,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextView"/>
+        app:layout_constraintTop_toBottomOf="@+id/passwordLabelTextView"/>
 
 </android.support.constraint.ConstraintLayout>
